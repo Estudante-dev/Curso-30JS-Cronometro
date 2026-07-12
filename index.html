@@ -5,23 +5,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cronometro</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Cronômetro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <div class="grade-fundo" aria-hidden="true"></div>
 
-    <div class="container">
-        <h1>Cronômetro</h1>
-        <div class="display">00:00:00.000</div>
-        <div class="buttons">
-            <button id="start">Play</button>
-            <button id="pause">Pause</button>
-            <button id="reset">Reset</button>
+    <main class="container">
+        <p class="marca">Cronômetro</p>
+        <h1 class="titulo">Precisão digital</h1>
+
+        <div class="painel">
+            <div class="anel-painel" aria-hidden="true"></div>
+            <div class="display-tempo" id="displayTempo">00:00:00.000</div>
+            <div class="status" id="statusCronometro">Pronto</div>
         </div>
-    </div>
 
-    <script src="javascript.js"></script>
+        <div class="botoes">
+            <button type="button" class="botao botao-iniciar" id="botaoIniciar">Iniciar</button>
+            <button type="button" class="botao botao-pausar" id="botaoPausar">Pausar</button>
+            <button type="button" class="botao botao-reiniciar" id="botaoReiniciar">Reiniciar</button>
+        </div>
+
+        <p class="hashtag">#30ProjetosJavaScript</p>
+    </main>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
